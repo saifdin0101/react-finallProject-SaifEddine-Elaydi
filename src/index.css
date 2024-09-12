@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bgl{
+  border-left: 1px solid gray;
+}
+.bgb:hover{
+  border-bottom: 1px solid black; 
+}
+nav{
+  box-shadow: -2px 2px 29px 1px rgba(0,0,0,0.49);
+
+}

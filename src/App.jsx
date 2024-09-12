@@ -1,9 +1,11 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Bighome } from "./pages/home";
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Router>
+      <Bighome />
+    </Router>
   );
 }
 
