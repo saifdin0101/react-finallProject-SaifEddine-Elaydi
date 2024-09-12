@@ -17,7 +17,7 @@ export const Navbar = () => {
             </div>
             <div className='flex justify-center items-center gap-10 text-2xl text-[#d0d0d0]'>
                 <div><FaRegUserCircle /></div>
-                <div className='bgl pl-[50px]'><RiShoppingCart2Line /></div>
+                <div className='bgl pl-[50px] flex relative'><RiShoppingCart2Line /><div className='text-xs h-[15px] w-[15px] flex justify-center items-center rounded-full absolute bg-red-500 right-[-8px]'>0</div></div>
             </div>
             
             
