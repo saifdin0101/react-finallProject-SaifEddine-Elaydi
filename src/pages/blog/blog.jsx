@@ -88,7 +88,7 @@ export const Blog = () => {
                 <div className=' w-full md:w-[30%] flex justify-start items-start flex-col'>
                     <div className='font-extrabold text-2xl '>Tag Cloud</div>
                     
-                    <div className='flex pt-10 gap-5'>
+                    <div className='flex pt-10 gap-5 '>
                         <div className='border-black border-[1px] border-solid hover:text-red-500 flex justify-center items-center px-2 hover:border-red-500 rounded-[20px]'>crafts</div>
                         <div className='border-black border-[1px] border-solid hover:text-red-500 flex justify-center items-center px-2 hover:border-red-500 rounded-[20px]'>street style</div>
                     </div>

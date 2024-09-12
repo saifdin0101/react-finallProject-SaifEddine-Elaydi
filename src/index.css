@@ -13,3 +13,10 @@ nav{
   box-shadow: -2px 2px 29px 1px rgba(0,0,0,0.49);
 
 }
+.btmborder{
+  border-bottom: 2px solid rgb(146, 144, 144); 
+}
+.sshadow{
+  box-shadow: 2px 1px 7px 0px rgba(0,0,0,0.75);
+
+}
