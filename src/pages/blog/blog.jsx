@@ -79,7 +79,7 @@ export const Blog = () => {
                         <p className='text-[#888888]'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...
                         </p>
-                        <div className='font-serif hover:text-[#e65540] hover:duration-300 flex gap-4 items-center'>
+                        <div className='font-serif  hover:text-[#e65540] hover:duration-300 flex gap-4 items-center'>
                             <span>Continue Reading</span>
                             <FaLongArrowAltRight className='text-xl' />
                         </div>
@@ -95,6 +95,7 @@ export const Blog = () => {
                     
                 </div>
             </div>
+            <div className='h-[100px] w-100%'></div>
             
         </div>
     );
