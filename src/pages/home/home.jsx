@@ -261,10 +261,19 @@ export const Home = () => {
         </div>
         <div className='h-[60vh] w-[100%] flex justify-center items-center gap-[90px] flex-col'>
             <div className='font-bold text-3xl text-[#222222]'>@ FOLLOW US ON INSTAGRAM</div>
-            <div className='h-[50%] w-[100%] bg-red-500 flex justify-center items-center'>
-            <div className='h-[100%] w-[33%] border-r-[#d9d9d9] border-solid border-[2px] bg-blue-200 flex justify-center items-center'></div>
-            <div className='h-[100%] w-[33%] bg-blue-200'></div>
-            <div className='h-[100%] w-[33%] bg-blue-200'></div>
+            <div className='h-[30%] w-[100%]  flex justify-center items-center'>
+            <div className='h-[100%] w-[33%] rightborder    flex justify-center flex-col items-center'>
+                <div className='font-thin text-xl'>Free Delivery Worldwide</div>
+                <div className='text-[#888888] text-sm'>Mirum est notare quam littera gothica</div>
+            </div>
+            <div className='h-[100%] w-[33%] rightborder   flex justify-center flex-col items-center'>
+                <div className='font-thin text-xl'>30 DAYS RETURN</div>
+                <div className='text-[#888888] text-sm'>Mirum est notare quam littera gothica</div>
+            </div>
+            <div className='h-[100%] w-[33%]    flex justify-center flex-col items-center'>
+                <div className='font-thin text-xl'>STORE OPENING</div>
+                <div className='text-[#888888] text-sm'>Mirum est notare quam littera gothica</div>
+            </div>
 
             </div>
 

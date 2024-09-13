@@ -20,3 +20,6 @@ nav{
   box-shadow: 2px 1px 7px 0px rgba(0,0,0,0.75);
 
 }
+.rightborder{
+  border-right: 2px solid rgb(146, 144, 144); 
+}
