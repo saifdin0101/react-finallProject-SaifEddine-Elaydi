@@ -73,13 +73,15 @@ export const Shop = () => {
                 </div>
                 
                 <div className=' w-[70vw] bg-blue-900 flex justify-center items-center gap-10 flex-wrap'>
-                {JsonData.products.map((e,i)=>{
-                    <div>
-                    <img className='h-[400px] w-[300px] bg-red-500' src={e.image} alt="" />
-                    <div className='h-[100px] w-[300px] bg-red-600'>{e.Product}</div>
-                </div>
-                    
-                })}
+                {JsonData.products.map((e, i) => (
+    <div key={e.id} className='flex flex-col items-center'>
+        <img className='h-[400px] w-[300px] bg-red-500' src={e.image} alt={e.Product} />
+        <div className='h-[100px] w-[300px] bg-red-600 flex items-center justify-center text-white'>
+            {e.Product}
+        </div>
+    </div>
+))}
+
                     
 
 
