@@ -94,3 +94,11 @@ nav{
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.cartparent:hover .addcart{
+  display: flex;
+
+}
+.addcart{
+  display: none;
+
+}
