@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         'blog': "url('./images/carousel2.jpg')",
         'blog2': "url('./images/blog-01.jpg')",
+        'blog4': "url('./images/blog-03.jpg')",
         'blog3': "url('./images/blog-02.jpg')",
         'gl1': "url('./images/gallery-07.jpg')",
         'gl2': "url('./images/banner-07.jpg')",

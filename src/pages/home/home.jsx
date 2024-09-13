@@ -1,7 +1,21 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import images from '../../constant/images';
+import { useEffect, useState } from 'react';
 export const Home = () => {
+    const cars = [images.item1, images.item2, images.item3]; 
+
+    const getRandomCar = () => {
+      const randomIndex = Math.floor(Math.random() * cars.length);
+      return cars[randomIndex];
+    };
+  
+    const [currentCar, setCurrentCar] = useState('');
+  
+    useEffect(() => {
+      setCurrentCar(getRandomCar());
+    }, []);
+
     return (
         <div>
             <div className='pt-[100px]'>
@@ -93,7 +107,168 @@ export const Home = () => {
         </div>
     </div>
 </div>
+<div className='pt-[100px]'>
+    <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+            clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+    >
+        
+        <SwiperSlide className='relative'>
+            <div className='flex justify-center items-center gap-5 flex-wrap'>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+            </div>
+        </SwiperSlide>
 
+       
+        <SwiperSlide className='relative'>
+        <div className='flex justify-center items-center gap-5 flex-wrap'>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+            </div>
+        </SwiperSlide>
+
+        <SwiperSlide className='relative'>
+        <div className='flex justify-center items-center gap-5 flex-wrap'>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+                <div className='relative h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                    <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                </div>
+            </div>
+        </SwiperSlide>
+
+    </Swiper>
+</div>
+<div className='w-[100%] h-[75vh] bg-[#f2f2f2] gap-10 flex justify-center items-center'>
+   <div className='h-[450px] w-[570px] overflow-hidden relative justify-center items-center'> <img className='h-full w-full hover:scale-[1.05] transition-transform transform hover:hover:duration-500  bg-cover bg-center object-cover ' src={images.cars3} alt="" /><div className='absolute top-[140px] left-[150px] text-3xl  gap-y-3 text-white flex justify-center items-center flex-col'>
+    <div className='font-extrabold text-3xl'>The Beauty
+    </div>
+    <div className='font-bold text-5xl'>LOOKBOOK</div>
+    <div className='font-thin text-xl hover:brb'>VIEW COLLECTION</div>
+    
+    
+    </div></div>
+    <div className='h-[450px] w-[570px] bg-white flex justify-center items-center flex-col'>
+      <div className='h-[50%] w-[95%]  '>
+        {currentCar ? (
+          <img className='h-full w-full   object-cover' src={currentCar} alt="Random" />
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
+      <div className='h-[20%] w-[70%] flex justify-center items-center flex-col'>
+        <div className='font-thin text-xl hover:text-red-600 hover:duration-300'>
+          Boxy2 T-Shirt with Roll Sleeve
+        </div>
+        <div>$20</div>
+      </div>
+      <div className='h-[20%] w-[70%] flex justify-center items-center gap-5'>
+        <div className='h-[50px] w-[80px] border-black border-[1px] border-solid flex justify-center items-center flex-col'>
+          -2083 <br /><span className='text-gray-600 font-thin'>days</span>
+        </div>
+        <div className='h-[50px] w-[80px] border-black border-[1px] border-solid flex justify-center items-center flex-col'>
+          -11 <br /><span className='text-gray-600 font-thin'>h</span>
+        </div>
+        <div className='h-[50px] w-[80px] border-black border-[1px] border-solid flex justify-center items-center flex-col'>
+          -10 <br /><span className='text-gray-600 font-thin'>min</span>
+        </div>
+        <div className='h-[50px] w-[80px] border-black border-[1px] border-solid flex justify-center items-center flex-col'>
+          -26 <br /><span className='text-gray-600 font-thin'>sec</span>
+        </div>
+      </div>
+    </div>
+    
+</div>
+        <div className='h-[90vh] w-full  flex justify-center items-center flex-col gap-5'>
+            <div className='h-[10%] w-[100%]  flex text-3xl font-bold justify-center items-center'>OUR BLOG</div>
+            <div className='h-[75%] w-[100%]  flex gap-5 justify-center items-center'>
+                <div className='h-[100%] w-[25%] '>
+                    <div className='h-[60%] w-full bg-red-50 overflow-hidden'><div className='bg-blog2  hover:scale-110 transition-transform hover:duration-700 h-full w-full bg-cover bg-center'></div></div>
+                    <div className='h-[40%] w-full  flex flex-col justify-center items-start gap-3'>
+                        <div className='text-xl font-thin'>Black Friday Guide: Best Sales a & Discount <br /> Codes</div>
+                        <div><span className='text-gray-700 font-thin'>by </span>fashe-theme Admin <span className='text-gray-700'>on </span>dec 28,2017</div>
+                        <div className='font-thin text-gray-700 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Etiam sed turpis sed lorem dignissim vulputate nec <br />cursus ante. Nunc sit...</div>
+                    </div>
+
+                </div>
+                <div className='h-[100%] w-[25%] '>
+                    <div className='h-[60%] w-full  overflow-hidden'><div className='bg-blog3  hover:scale-110 transition-transform hover:duration-700 h-full w-full bg-cover bg-center'></div></div>
+                    <div className='h-[40%] w-full   flex flex-col justify-center items-start gap-3'>
+                        <div className='text-xl font-thin'>Black Friday Guide: Best Sales a & Discount <br /> Codes</div>
+                        <div><span className='text-gray-700 font-thin'>by </span>fashe-theme Admin <span className='text-gray-700'>on </span>dec 28,2017</div>
+                        <div className='font-thin text-gray-700 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Etiam sed turpis sed lorem dignissim vulputate nec <br />cursus ante. Nunc sit...</div>
+                    </div>
+
+                </div>
+                <div className='h-[100%] w-[25%] '>
+                    <div className='h-[60%] w-full  overflow-hidden'><div className='bg-blog4  hover:scale-110 transition-transform hover:duration-700 h-full w-full bg-cover bg-center'></div></div>
+                    <div className='h-[40%] w-full   flex flex-col justify-center items-start gap-3'>
+                        <div className='text-xl font-thin'>Black Friday Guide: Best Sales a & Discount <br /> Codes</div>
+                        <div><span className='text-gray-700 font-thin'>by </span>fashe-theme Admin <span className='text-gray-700'>on </span>dec 28,2017</div>
+                        <div className='font-thin text-gray-700 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Etiam sed turpis sed lorem dignissim vulputate nec <br />cursus ante. Nunc sit...</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div className='h-[60vh] w-[100%] flex justify-center items-center gap-[90px] flex-col'>
+            <div className='font-bold text-3xl text-[#222222]'>@ FOLLOW US ON INSTAGRAM</div>
+            <div className='h-[50%] w-[100%] bg-red-500 flex justify-center items-center'>
+            <div className='h-[100%] w-[33%] border-r-[#d9d9d9] border-solid border-[2px] bg-blue-200 flex justify-center items-center'></div>
+            <div className='h-[100%] w-[33%] bg-blue-200'></div>
+            <div className='h-[100%] w-[33%] bg-blue-200'></div>
+
+            </div>
+
+        </div>
         </div>
     );
 };
