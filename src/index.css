@@ -23,3 +23,6 @@ nav{
 .rightborder{
   border-right: 2px solid rgb(146, 144, 144); 
 }
+.leftborder{
+  border-left: 2px solid rgb(146, 144, 144); 
+}

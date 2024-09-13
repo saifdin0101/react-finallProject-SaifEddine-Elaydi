@@ -1,0 +1,1 @@
+export * as people from "../json/products.json"
