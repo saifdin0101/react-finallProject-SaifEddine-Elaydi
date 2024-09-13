@@ -1,1 +1,1 @@
-export * as people from "../json/products.json"
+export * as products from "../json/products.json"

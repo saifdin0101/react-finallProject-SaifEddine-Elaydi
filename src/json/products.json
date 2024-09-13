@@ -1,65 +1,65 @@
 [{
     "id": 1,
     "Product": "Ingamar",
-    "image": "Goter",
+    "image": "shop1",
     "type1": "Roubay",
     "color": "Stearn",
-    "price": "$3.22"
+    "price": "$5.22"
   }, {
     "id": 2,
     "Product": "Penny",
-    "image": "Martelet",
+    "image": "shop2",
     "type1": "Puve",
     "color": "Blanking",
     "price": "$4.15"
   }, {
     "id": 3,
     "Product": "Livvy",
-    "image": "Hamly",
+    "image": "shop3",
     "type1": "Bastie",
     "color": "Roelofsen",
     "price": "$6.34"
   }, {
     "id": 4,
     "Product": "Aveline",
-    "image": "MacCague",
+    "image": "shop4",
     "type1": "Vatini",
     "color": "Hailwood",
     "price": "$3.37"
   }, {
     "id": 5,
     "Product": "Reinald",
-    "image": "Surcomb",
+    "image": "shop5",
     "type1": "Sugar",
     "color": "Ilewicz",
     "price": "$0.27"
   }, {
     "id": 6,
     "Product": "Tye",
-    "image": "De Filippis",
+    "image": "shop6",
     "type1": "Bridel",
     "color": "Farreil",
     "price": "$5.74"
   }, {
     "id": 7,
     "Product": "Florian",
-    "image": "Lere",
+    "image": "shop7",
     "type1": "Ricciardello",
     "color": "Somerscales",
-    "price": "$9.18"
+    "price": "$14.18"
   }, {
     "id": 8,
     "Product": "Lilly",
-    "image": "Harradine",
+    "image": "shop8",
     "type1": "Markwell",
     "color": "Egdal",
-    "price": "$4.27"
+    "price": "$7.27"
   }, {
     "id": 9,
     "Product": "Silvano",
-    "image": "Apted",
+    "image": "shop9",
     "type1": "Sandy",
     "color": "Gillet",
-    "price": "$7.24"
+    "price": "$17.24"
   }]
   

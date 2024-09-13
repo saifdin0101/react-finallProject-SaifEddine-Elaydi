@@ -1,4 +1,5 @@
 import React from 'react';
+import { JsonData } from '../../constant';
 
 
 export const Shop = () => {
@@ -7,8 +8,8 @@ export const Shop = () => {
             <header className='flex bg-blog bg-cover bg-center text-white font-extrabold text-5xl justify-center items-center h-[220px] bg-blue-50'>
                 <div>Products</div>
             </header>
-            <div className='h-[200vh] w-[100%] flex justify-center items-center gap-10'>
-                <div className='h-[150vh] w-[250px]  flex flex-col gap-20 p-4'>
+            <div className=' w-[100%] flex justify-center pt-[100px] gap-10'>
+                <div className=' w-[250px]  flex flex-col gap-20 p-4'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='text-2xl font-medium mb-4'>Categories</div>
                         <div>
@@ -70,7 +71,21 @@ export const Shop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='h-[150vh] w-[70vw] bg-blue-900'></div>
+                
+                <div className=' w-[70vw] bg-blue-900 flex justify-center items-center gap-10 flex-wrap'>
+                {JsonData.products.map((e,i)=>{
+                    <div>
+                    <img className='h-[400px] w-[300px] bg-red-500' src={e.image} alt="" />
+                    <div className='h-[100px] w-[300px] bg-red-600'>{e.Product}</div>
+                </div>
+                    
+                })}
+                    
+
+
+                    
+
+                </div>
             </div>
         </div>
     );
