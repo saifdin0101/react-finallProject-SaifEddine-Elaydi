@@ -122,21 +122,28 @@ export const Home = () => {
         
         <SwiperSlide className='relative'>
             <div className='flex justify-center items-center gap-5 flex-wrap'>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative h-[500px] w-[300px]  flex flex-col cartparent  '>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300 ' src={images.cars1}  alt="Car 1" />
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
+
                     <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars2} alt="Car 2" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
+
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars3} alt="Car 3" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
+
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars1} alt="Car 1" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div className='hover:text-red-600 hover:duration-300'>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
             </div>
         </SwiperSlide>
@@ -144,42 +151,50 @@ export const Home = () => {
        
         <SwiperSlide className='relative'>
         <div className='flex justify-center items-center gap-5 flex-wrap'>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars1} alt="Car 1" />
                     <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars2} alt="Car 2" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars3} alt="Car 3" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars1} alt="Car 1" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
             </div>
         </SwiperSlide>
 
         <SwiperSlide className='relative'>
         <div className='flex justify-center items-center gap-5 flex-wrap'>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars1} alt="Car 1" />
                     <div className='h-[20%] w-full  flex pt-5 font-thin text-lg flex-col'><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars2} alt="Car 2" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars2} alt="Car 2" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars3} alt="Car 3" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars3} alt="Car 3" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
-                <div className='relative h-[500px] w-[300px]  flex flex-col'>
-                    <img className='h-[80%] w-full object-cover' src={images.cars1} alt="Car 1" />
+                <div className='relative cartparent h-[500px] w-[300px]  flex flex-col'>
+                    <img className='h-[80%] w-full object-cover hover:brightness-50 hover:duration-300' src={images.cars1} alt="Car 1" />
                     <div className='h-[20%] w-full  pt-5 font-thin text-lg flex-col flex '><div>Boxy7 T-Shert with roll sleeve</div><div>$20</div></div>
+                    <div className='absolute bottom-[120px] right-[55px] addcart bg-black font-thin text-xl text-white px-10 py-2 rounded-[30px] cursor-pointer hover:bg-red-500 hover:duration-300 '>add to cart</div>
                 </div>
             </div>
         </SwiperSlide>
@@ -196,9 +211,9 @@ export const Home = () => {
     
     </div></div>
     <div className='h-[450px] w-[570px] bg-white flex justify-center items-center flex-col'>
-      <div className='h-[50%] w-[95%]  '>
+      <div className='h-[70%] w-[95%]  '>
         {currentCar ? (
-          <img className='h-full w-full   object-cover' src={currentCar} alt="Random" />
+          <img className='h-full w-full  bg-cover ' src={currentCar} alt="Random" />
         ) : (
           <p>Loading...</p>
         )}

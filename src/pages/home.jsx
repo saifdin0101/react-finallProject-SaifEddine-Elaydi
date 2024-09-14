@@ -7,6 +7,8 @@ import { Home } from './home/home';
 import { Shop } from './shop/shop';
 import { Navbar } from '../layout/navbar';
 import { Footer } from '../layout/footer';
+import { Login } from './login/login';
+import { Signup } from './signup/signup';
 
 export const Bighome = () => {
     return (
@@ -18,6 +20,8 @@ export const Bighome = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
         </Routes>
         <Footer/>
         
